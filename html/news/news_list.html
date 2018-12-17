@@ -140,7 +140,6 @@
 				},function(ret,status){
 					toast.hide();
 					if(status =='success'&&ret.rcode == 0){
-						//alert(JSON.stringify(ret))
 						moffset+=ret.rdata.length;
 						if (ret.rdata.length > 0) {
 							drawNewsView(ret.rdata);
